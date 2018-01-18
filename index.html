@@ -11,19 +11,18 @@
 	<h1 id="title">Matt Lynner | Web Developer</h1>
 		<p>Check it out!</p>
 		
-			<ul class="topnav">
-			    <li><a href="#">Home</a></li>
-				<li><a href="#">Contact</a></li>
-				
-				<div class="dropdown">
-					<button class="dropbtn">Projects</button>
-						<div class="dropdown-content">
-							<li><a href="#">Link 1</a></li>
-							<li><a href="#">Link 2</a></li>
-							<li><a href="#">Link 3</a></li>
-						</div>
-					</div>
-			</ul>
+	<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Projects</button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
 			
 		<div class="image-container">
 			<div class="centered"><h2>Overlay Text... Fo Snizzle</h2></div>
@@ -31,6 +30,16 @@
 				alt="computer" id="banner" width="100%"/>
 		</div>
 <script>
+function navFunction () {
+	var x =
+document.getElementById("myNavbar");
+	if (x.className === ("navbar") 
+		x.className += " responsive";
+	} else {
+		x.className = "navbar";
+	}
+}
+
 </script>
 
 </body>
