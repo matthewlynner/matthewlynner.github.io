@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: auto;
+}
+
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
@@ -7,9 +13,6 @@ body {
     padding: 5px;
 }
 
-p {
-    padding-left: 5px;
-}
 
 /********Navigation Section**********/
 
@@ -82,7 +85,7 @@ p {
 }
 
 
-/*************end nav section **************/
+/*************Banner **************/
 
 #banner {
     background-repeat: repeat;
@@ -102,22 +105,65 @@ p {
     transform: translate(-50%, -50%);
 }
 
+/*************Image Grid*************/
 
+.projects {
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
 
+.row {
+  margin: 8px -16px;
+}
 
+/*padding between each column*/
 
+.row,
+.row > .column {
+  padding-left: 15px;
+}
 
+/* Create four equal columns that float */
 
+.column {
+  float: left;
+  width: 25%;
+}
 
+/* Clear floats after rows */
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+/*Content */
 
+.content {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
 
+/*Responsive layout - four to two*/
 
+@media (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
 
+/*Responsive layout - two columns stack*/
 
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
-
+/*----------END IMAGE GRID*----------*/
 
 
 
