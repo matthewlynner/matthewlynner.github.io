@@ -25,7 +25,7 @@ body {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #222;
   font-family: Arial;
   position: fixed;
   top: 0;
@@ -46,8 +46,8 @@ body {
 
 
 /* Add a background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover {
-  background-color: #222;
+.navbar a:hover {
+  background-color: #7581d2;
 }
 
 
@@ -77,6 +77,7 @@ body {
   margin: auto;
   text-align: center;
   padding: 100px 100px;
+  font-size: 2em;
 }
 
 .row {
@@ -113,6 +114,49 @@ body {
   text-align: center;
 }
 
+/*Hover Effect*/
+
+
+.content img:hover {
+  opacity: .4;
+  transition: opacity .3s ease-in-out;
+}
+
+.caption {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.caption img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.caption-text {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  padding: 0.75em 1em;
+  font-weight: 700;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.7);
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.caption:hover .caption-text {
+  opacity: 1;
+}
+
+/*END IMG TEXT/HOVER*/
+
 /*Responsive layout - four to two*/
 
 @media (max-width: 900px) {
@@ -138,7 +182,8 @@ body {
   margin: auto;
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
+  font-size: 2em;
 }
 
 input[type=text], select, textarea {
@@ -160,10 +205,11 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   margin-left: 45%;
+  font-family: inherit;
 }
 
 input[type=submit]:hover {
-  background-color: #222;
+  background-color: #7581d2;
 }
 
 .form-container {
