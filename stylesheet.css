@@ -206,6 +206,7 @@ input[type=submit] {
   cursor: pointer;
   margin-left: 45%;
   font-family: inherit;
+  margin-top: 20px;
 }
 
 input[type=submit]:hover {
