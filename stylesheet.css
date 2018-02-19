@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: auto;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title {
+  padding: 15px 15px;
+}
+
+
+#title {
+    padding: 5px;
+    margin-top: 50px
+}
+
+
+/********Navigation Section**********/
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #222;
+  font-family: Arial;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  opacity: 0.6;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/* Add a background color to navbar links on hover */
+.navbar a:hover {
+  background-color: #7581d2;
+}
+
+
+/*************Banner **************/
+
+#banner {
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*************Image Grid*************/
+
+.projects {
+  margin: auto;
+  text-align: center;
+  padding: 100px 100px;
+  font-size: 2em;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/*padding between each column*/
+
+.row,
+.row > .column {
+  padding-left: 15px;
+}
+
+/* Create four equal columns that float */
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Content */
+
+.content {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/*Hover Effect*/
+
+
+.content img:hover {
+  opacity: .4;
+  transition: opacity .3s ease-in-out;
+}
+
+.caption {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.caption img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.caption-text {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  padding: 0.75em 1em;
+  font-weight: 700;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.7);
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.caption:hover .caption-text {
+  opacity: 1;
+}
+
+/*END IMG TEXT/HOVER*/
+
+/*Responsive layout - four to two*/
+
+@media (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/*Responsive layout - two columns stack*/
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*----------END IMAGE GRID*----------*/
+
+
+/*--------------CONTACT FORM-----------*/
+
+.contact-heading {
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-size: 2em;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 45%;
+  font-family: inherit;
+  margin-top: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #7581d2;
+}
+
+.form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:50%;
+}
