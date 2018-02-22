@@ -5,6 +5,8 @@
 <title>Matt Lynner</title>
 <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="typed/node_modules/typed.js/lib/typed.js" type="text/JavaScript"></script>
 </head>
 
 <body>
@@ -21,10 +23,27 @@
 </div>
 
 <div class="image-container">
-	<div class="centered"><h2>Overlay Text... Fo Snizzle</h2></div>
+	<div class="centered">
+		<span style="font-size: 3em" id="typed"></span>
+	</div>
 		<img src="https://www.mistrisolutions.com/wp-content/uploads/2016/01/website-design-background.png"
 		alt="computer" id="banner" width="100%"/>
 </div>
+
+<script>
+  new Typed('#typed', {
+    strings: ["Welcome to my portfolio website."],
+    typeSpeed: 80,
+    onComplete: function() {
+      var cursor = document.getElementsByClassName('typed-cursor')[0];
+      setTimeout(function() {
+        cursor.style.animationIterationCount = 0;
+      }, 2000);
+    }
+  })
+</script>
+
+
 
 <!--Portfolio Gallery Grid-->
 
@@ -74,35 +93,17 @@
 
 
 <!--CONTACT FORM-->
-
-<h2 class="contact-heading">Contact Me</h2>
-
-<form id="contact" action="">
-
-<label for="name" id="name_label">Name *</label>
-<label class="error" for="name" id="name_error">this field is required</label>
-<br /> <input type="text" name="name" id="name" value="" class="text-input" placeholder="How should I call you?" />
-
-
-<br />
-<label for="email" id="email_label">E-Mail *</label>
-<label class="error" for="email" id="email_error">this field is required</label>
-<label class="error" for="email" id="email_invalid_error">please insert a valid email</label>
-<br /> <input type="email" name="email" id="email" value="" class="text-input" placeholder="How can I reach you?" />
-
-
-<br />
-<label for="message">Message *</label>
-<label class="error" for="message" id="message_error">this field is required</label>
-<br /> <textarea name="message" id="message" rows="8" class="text-input" placeholder="What would you like to tell me?"></textarea>
-
-
-<br />
-<input name="submit" id="submit" value="Send me Mail!" type="submit" class="subbutton">
-
+<header class="contact-heading">Contact Me</header>
+<div class="form-container">
+<form method="POST" action="https://formspree.io/matthewlynner@gmail.com">
+	<input type="text" name="name">
+  <input type="email" name="email" placeholder="Your email">
+  <textarea name="message" placeholder="Your message"></textarea>
+  <button type="submit">Send</button>
 </form>
+</div>
 
-<script src="script/validate-form.js"></script>
+<!--END CONTACT FORM-->
 
 </body>
 </html>
