@@ -10,16 +10,26 @@
 </head>
 
 <body>
+	<div id="home"></div>
 	<div class="title">
 		<h1 id="title">Matt Lynner | Web Developer</h1>
 	</div>
 
 <!--Navigation Section-->
 <div class="navbar">
-  <a href="#">Home</a>
-  <a href="#">Projects</a>
-  <a href="#">Contact</a>
+  <a href="#home">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
 </div>
+
+<script>
+$('navbar').find('a').click(function(){
+    var $href = $(this).attr('href');
+    var $anchor = $('#'+$href).offset();
+		$('body').animate({ scrollTop: $anchor.top });
+    return false;
+});
+</script>
 
 <div class="image-container">
 	<div class="centered">
@@ -44,7 +54,7 @@
 
 
 <!--Portfolio Gallery Grid-->
-
+<div id="projects"></div>
 <h2 class="projects">Projects</h2>
 <div class="row">
 	<a href="http://www.twincitiesstrength.com/" target="_blank">
@@ -91,6 +101,7 @@
 
 
 <!--CONTACT FORM-->
+<div id="contact"></div>
 <h2 class="projects">Contact Me</h2>
 
 <div class="form-container">
