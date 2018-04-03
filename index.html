@@ -1,43 +1,113 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-<meta charset="utf-8">
-<title>Matt Lynner</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="typed/node_modules/typed.js/lib/typed.js" type="text/JavaScript"></script>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
 
-<body>
-	<div id="home"></div>
-	<div class="title">
-		<h1 id="title">Matt Lynner | Web Developer</h1>
-	</div>
+  <body>
+    <!-- Navigation Section -->
 
-<!--Navigation Section-->
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/matthewlynner/portfolio/about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Twin Cities Strength</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">The Hair Chateau</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Flexible Benefits Consulting</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Portfolio</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+    </nav>
+
+    <!--header image-->
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Matt Lynner | Web Developer</h1>
+         <p class="lead">Minneapolis, MN</p>
+      </div>
+    </div>
+
+    <!--Welcome Section-->
+    <div class="container welcome-header">
+      <h1>Welcome</h1>
+      <p>Take a look around at what I've built, feel free to reach out with any questions</p>
+    </div>
+
+    <!-- Image Gallery-->
+<div class="container">
+<div class="row">
+ <div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src="https://i.pinimg.com/736x/f7/9f/4f/f79f4f860cfc6e80ad861599c782d5c4--beautiful-waterfalls-karnataka.jpg" alt="">
+            <div class="overlay">
+                <h2>Twin Cities Strength</h2>
+				<p>
+					<a href="www.twincitiesstrength.com/">View Site</a>
+				</p>
+            </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src="https://i.pinimg.com/736x/f7/9f/4f/f79f4f860cfc6e80ad861599c782d5c4--beautiful-waterfalls-karnataka.jpg" alt="">
+            <div class="overlay">
+                <h2>The Hair Chateau</h2>
+				<p>
+					<a href="#">View Site</a>
+				</p>
+            </div>
+    </div>
 </div>
 
-<script>
-$('navbar').find('a').click(function(){
-    var $href = $(this).attr('href');
-    var $anchor = $('#'+$href).offset();
-		$('body').animate({ scrollTop: $anchor.top });
-    return false;
-});
-</script>
-
-<div class="image-container">
-	<div class="centered">
-		<span style="font-size: 3em" id="typed"></span>
-	</div>
-		<img src="https://www.mistrisolutions.com/wp-content/uploads/2016/01/website-design-background.png"
-		alt="computer" id="banner" width="100%"/>
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src="https://i.pinimg.com/736x/f7/9f/4f/f79f4f860cfc6e80ad861599c782d5c4--beautiful-waterfalls-karnataka.jpg" alt="">
+            <div class="overlay">
+                <h2>Flexible Benefits Consulting</h2>
+				<p>
+					<a href="#">View Site</a>
+				</p>
+            </div>
+    </div>
 </div>
+</div>
+</div>
+<footer>
+  <div class="footer-icons">
+
+  </div>
+  <div class="container text-center">
+    <p>Matthew Lynner Copyright 2018</p>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
 
 <script>
   new Typed('#typed', {
@@ -49,85 +119,40 @@ $('navbar').find('a').click(function(){
         cursor.style.animationIterationCount = 0;
       }, 2000);
     }
-  })
+  });
 </script>
 
 
-<!--Portfolio Gallery Grid-->
-<div id="projects"></div>
-<br>
-<br>
-<br>
-<h2 class="projects">Projects</h2>
-<div class="row">
-	<a href="http://www.twincitiesstrength.com/" target="_blank">
-		<div class="column">
-				<div class="content">
-					<figure class="caption">
-						<img src="http://i63.tinypic.com/htv681.png"
-						alt="TCstrength" style="width: 75%" height="75%">
-						<figcaption class="caption-text">Wordpress site built for my local personal training business</figcaption>
-					</figure>
-				</div>
-			</div>
-		</a>
-		<div class="column">
-		<div class="content">
-			<figure class="caption">
-				<img src="https://images.unsplash.com/photo-1465711403138-162e171bb7e4?dpr=1&auto=format&fit=crop&w=376&h=251&q=60&cs=tinysrgb"
-				alt="other" style="width: 100%">
-				<figcaption class="caption-text">Project Caption Testing</figcaption>
-			</figure>
-		</div>
-	</div>
-		<div class="column">
-		<div class="content">
-			<figure class="caption">
-				<img src="https://images.unsplash.com/photo-1465711403138-162e171bb7e4?dpr=1&auto=format&fit=crop&w=376&h=251&q=60&cs=tinysrgb"
-				alt="other" style="width: 100%">
-				<figcaption class="caption-text">Project Caption Testing</figcaption>
-			</figure>
-		</div>
-	</div>
-		<div class="column">
-		<div class="content">
-			<figure class="caption">
-				<img src="https://images.unsplash.com/photo-1465711403138-162e171bb7e4?dpr=1&auto=format&fit=crop&w=376&h=251&q=60&cs=tinysrgb"
-				alt="other" style="width: 100%">
-				<figcaption class="caption-text">Project Caption Testing</figcaption>
-			</figure>
-		</div>
-	</div>
-</div>
 
-<!--END GALLERY-->
+<script>
+$('navbar').find('a').click(function(){
+    var $href = $(this).attr('href');
+    var $anchor = $('#'+$href).offset();
+		$('body').animate({ scrollTop: $anchor.top });
+    return false;
+});
+</script>
+
 
 
 <!--CONTACT FORM-->
-<div id="contact"></div>
+
 <h2 class="projects">Contact Me</h2>
 
-<div class="form-container">
-  <form method="POST" action="https://formspree.io/matthewlynner@gmail.com">
+	  <form method="POST" action="https://formspree.io/matthewlynner@gmail.com">
 
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name..">
+	    <label for="name">Name</label>
+	    <input type="text" id="name" name="name" placeholder="Name.." required>
 
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Email..">
+	    <label for="email">Email</label>
+	    <input type="text" id="email" name="email" placeholder="Email.." required>
 
-    <label for="subject">Message</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+	    <label for="subject">Message</label>
+	    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
 
-    <input type="submit" value="Submit">
+	    <input type="submit" value="Submit">
 
-  </form>
-</div>
-
-
+	  </form>
 
 
 <!--END CONTACT FORM-->
-
-</body>
-</html>

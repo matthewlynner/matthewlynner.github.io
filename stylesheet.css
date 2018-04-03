@@ -1,212 +1,143 @@
-* {
-  box-sizing: border-box;
-  max-width: 100%;
-  margin: auto;
-}
-
-body {
-    margin: 0;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.title {
-  padding: 15px 15px;
-}
-
-
-#title {
-    padding: 5px;
-    margin-top: 50px
-}
-
-
-/********Navigation Section**********/
-
-/* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #222;
-  font-family: Arial;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  width: 100%;
-  opacity: 0.6;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-
-/* Add a background color to navbar links on hover */
-.navbar a:hover {
-  background-color: #7581d2;
-}
-
-
-/*************Banner **************/
-
-#banner {
-    background-repeat: repeat;
+.jumbotron {
+    margin-bottom: 0px;
+    height: 400px;
+    background-image: url("https://www.mistrisolutions.com/wp-content/uploads/2016/01/website-design-background.png");
     background-size: cover;
+    background-position: 40% 90%;
+    background-repeat: no-repeat;
+    color: white;
 }
 
-.image-container {
-    position: relative;
+body > div.jumbotron.jumbotron-fluid > div > p {
+    padding-left: 3px;
+    font-size: 1.5em;
+}
+
+/*NAVIGATION STYLE*/
+
+.nav-item,
+.nav-item dropdown {
+   padding-right: 35px;
+}
+
+/*WELCOME SECTION*/
+
+.welcome-header {
     text-align: center;
-    color: white;
+    color: black;
+    padding-top: 35px;
+    max-width: 100%;
+    height: 165px;
 }
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*IMAGE GALLERY EFFECTS*/
+
+
+.col-md-4 .image-container {
+    margin-top: 25px;
 }
 
-/*************Image Grid*************/
-
-.projects {
-  margin: auto;
-  text-align: center;
-  padding: 100px 100px;
-  font-size: 2em;
-}
-
-.row {
-  margin: 8px -16px;
-}
-
-/*padding between each column*/
-
-.row,
-.row > .column {
-  padding-left: 15px;
-}
-
-/* Create four equal columns that float */
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*Content */
-
-.content {
-  background-color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-/*Hover Effect*/
-
-
-.content img:hover {
-  opacity: .4;
-  transition: opacity .3s ease-in-out;
-}
-
-.caption {
-  position: relative;
-  padding: 0;
-  margin: 0;
-}
-
-.caption img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.caption-text {
-  opacity: 0;
-  position: absolute;
+.hovereffect {
   width: 100%;
-  color: #fff;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: gray;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
   left: 0;
+  padding: 50px 20px;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+
+.hovereffect h2:after {
+  position: absolute;
   bottom: 0;
-  padding: 0.75em 1em;
-  font-weight: 700;
-  z-index: 2;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: rgba(0,0,0,.7);
-  -webkit-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
 }
 
-.caption:hover .caption-text {
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
   opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
-/*END IMG TEXT/HOVER*/
+/*FOOTER*/
 
-/*Responsive layout - four to two*/
-
-@media (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
+body > footer {
+    padding: 25px 25px;
+    margin-top: 25px;
+    background-color: #f8f9fa;
+    min-width: 100%;
+    color: rgba(0,0,0,.7);
 }
 
-/*Responsive layout - two columns stack*/
 
-@media (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
+/*FOOTER ICONS*/
 
-/*----------END IMAGE GRID*----------*/
+.footer-icons {
 
-
-/*--------------CONTACT FORM-----------*/
-
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.form-container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
 }
