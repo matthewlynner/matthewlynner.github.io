@@ -32,6 +32,9 @@ body > div.jumbotron.jumbotron-fluid > div > p {
 
 /*IMAGE GALLERY EFFECTS*/
 
+.col-md-4 {
+  padding-bottom: 15px;
+}
 
 .col-md-4 .image-container {
     margin-top: 25px;
@@ -124,6 +127,11 @@ body > div.jumbotron.jumbotron-fluid > div > p {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+/*CONTACT FORM*/
+
+
+
 
 /*FOOTER*/
 
