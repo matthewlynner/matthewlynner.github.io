@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="javascript.js"></script>
   </head>
 
   <body>
@@ -22,18 +23,8 @@
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Projects</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="http://www.twincitiesstrength.com">Twin Cities Strength</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">The Hair Chateau</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Flexible Benefits Consulting</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Portfolio</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -100,7 +91,8 @@
   <h1>Contact Me</h1>
   <p>Questions?</p>
 </div>
-<div class="container">
+
+<div class="container form-container">
 <form action="https://formspree.io/matthewlynner@gmail.com" method="POST">
   <div class="form-group">
     <label for="Name">Name</label>
@@ -136,14 +128,6 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script>
-  $('navbar').find('a').click(function(){
-      var $href = $(this).attr('href');
-      var $anchor = $('#'+$href).offset();
-  		$('body').animate({ scrollTop: $anchor.top });
-      return false;
-  });
-  </script>
 
   </body>
 </html>
