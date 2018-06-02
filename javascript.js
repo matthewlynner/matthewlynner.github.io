@@ -4,3 +4,8 @@ $('navbar').find('a').click(function(){
     $('body').animate({ scrollTop: $anchor.top });
     return false;
 });
+
+
+$('.carousel').carousel({
+  interval: 2000
+})

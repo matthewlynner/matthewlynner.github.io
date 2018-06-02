@@ -31,6 +31,17 @@ body > div.jumbotron.jumbotron-fluid > div > p {
     height: 165px;
 }
 
+/*ABOUT PAGE*/
+
+.matt-photo {
+  border-radius: 50%;
+}
+
+.about-matt {
+  padding: 100px;
+}
+
+
 /*IMAGE GALLERY EFFECTS*/
 
 .col-md-4 {
@@ -139,10 +150,9 @@ body > div.jumbotron.jumbotron-fluid > div > p {
   width: 75%;
 }
 
-
 /*FOOTER*/
 
-body > footer {
+footer {
     padding: 25px 25px;
     margin-top: 25px;
     background-color: #f8f9fa;
