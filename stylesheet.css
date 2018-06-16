@@ -1,6 +1,6 @@
 .jumbotron {
     margin-bottom: 0px;
-    height: 400px;
+    height: 625px;
     background-image: url("https://www.mistrisolutions.com/wp-content/uploads/2016/01/website-design-background.png");
     background-size: cover;
     background-position: 40% 90%;
@@ -20,29 +20,25 @@ body > div.jumbotron.jumbotron-fluid > div > p {
 }
 
 /*WELCOME SECTION*/
+.container .welcome-header {
+  margin: 5px 0px;
+}
 
 .welcome-header {
     text-align: center;
     color: black;
-    margin-top: 100px;
     padding-bottom: 50px;
-    padding-top: 35px;
+    padding-top: 100px;
     max-width: 100%;
     height: 165px;
 }
 
-/*ABOUT PAGE*/
-
-.matt-photo {
-  border-radius: 50%;
-}
-
-.about-matt {
-  padding: 100px;
-}
-
 
 /*IMAGE GALLERY EFFECTS*/
+
+body > div:nth-child(4) {
+  padding-top: 100px;
+}
 
 .col-md-4 {
   padding-bottom: 15px;
@@ -141,7 +137,45 @@ body > div.jumbotron.jumbotron-fluid > div > p {
 }
 
 .project-container {
-  padding-top: 175px;
+  padding-top: 140px;
+}
+
+/*ABOUT PAGE*/
+
+.matt-photo {
+  border-radius: 50%;
+}
+
+.about-matt {
+  padding: 100px;
+}
+
+
+/*PROJECTS PAGE*/
+
+@media only screen and (max-width: 768px) {
+  div.col-md-4.project-container {
+    text-align: center;
+  }
+}
+
+.hrstyle {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.container .application-header {
+  margin: 5px 0px;
+}
+
+.application-header {
+    text-align: center;
+    color: black;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    max-width: 100%;
+    height: 165px;
 }
 
 /*CONTACT FORM*/
@@ -149,6 +183,7 @@ body > div.jumbotron.jumbotron-fluid > div > p {
 .form-container {
   width: 75%;
 }
+
 
 /*FOOTER*/
 

@@ -2,19 +2,12 @@ body {
   background-color: black;
 }
 
-h1 {
+.container {
   color: white;
   text-align: center;
-  margin-top: 100px;
 }
 
-h2 {
-  text-align: right;
-  margin-top: 200px;
-}
-
-
-#quoteDisplay {
+.calcForm {
   position: absolute;
   text-align: center;
   color: white;
@@ -26,13 +19,15 @@ h2 {
   transform: translateX(-50%);
 }
 
+.calcRow {
+  padding: 5px;
+}
 
-button {
-  height:20px;
-  position:relative;
-  margin: -20px -50px;
-  width:100px;
-  top:50%;
-  left: 50%;
-  margin-top: 250px;
+.calcDisplay {
+  width: 110px
+}
+
+.calcButton {
+  border-radius: 25%;
+  font-weight: bold;
 }

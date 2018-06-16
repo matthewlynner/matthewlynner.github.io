@@ -32,13 +32,6 @@
 
     <!--header image-->
 
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Matt Lynner | Web Developer</h1>
-         <p class="lead">Minneapolis, MN</p>
-      </div>
-    </div>
-
 <!--CONTACT FORM-->
 <div class="container welcome-header">
   <h1>Contact Me</h1>
@@ -60,7 +53,7 @@
     <label for="Message">Message</label>
     <textarea class="form-control" id="Message" rows="3" name="Message"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary" value="Send">Submit</button>
+  <button type="submit" class="btn btn-secondary" value="Send">Submit</button>
 </form>
 </div>
 
@@ -71,7 +64,7 @@
 
   </div>
   <div class="container text-center">
-    <p>Matthew Lynner Copyright 2018</p>
+    <p>Matthew Lynner 2018</p>
   </div>
 </footer>
 
@@ -81,14 +74,6 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script>
-  $('navbar').find('a').click(function(){
-      var $href = $(this).attr('href');
-      var $anchor = $('#'+$href).offset();
-  		$('body').animate({ scrollTop: $anchor.top });
-      return false;
-  });
-  </script>
 
   </body>
 </html>
