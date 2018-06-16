@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+.container {
+  color: white;
+  text-align: center;
+}
+
+.calcForm {
+  position: absolute;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.calcRow {
+  padding: 5px;
+}
+
+.calcDisplay {
+  width: 110px
+}
+
+.calcButton {
+  border-radius: 25%;
+  font-weight: bold;
+}
