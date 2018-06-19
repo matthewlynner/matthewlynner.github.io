@@ -142,12 +142,25 @@ body > div:nth-child(4) {
 
 /*ABOUT PAGE*/
 
+.container .about-header {
+  margin: 5px 0px;
+}
+
+.about-header {
+    text-align: center;
+    color: black;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    max-width: 100%;
+    height: 165px;
+}
+
 .matt-photo {
   border-radius: 50%;
 }
 
 .about-matt {
-  padding: 100px;
+  padding: 100px 15px;
 }
 
 
@@ -181,7 +194,7 @@ body > div:nth-child(4) {
 /*CONTACT FORM*/
 
 .form-container {
-  width: 75%;
+  width: 85%;
 }
 
 
