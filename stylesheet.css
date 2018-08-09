@@ -36,10 +36,6 @@ body > div.jumbotron.jumbotron-fluid > div > p {
 
 /*IMAGE GALLERY EFFECTS*/
 
-body > div:nth-child(4) {
-  padding-top: 100px;
-}
-
 .col-md-4 {
   padding-bottom: 15px;
 }
