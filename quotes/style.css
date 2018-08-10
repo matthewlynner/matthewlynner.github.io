@@ -1,17 +1,15 @@
 body {
-  background-color: black;
+  background-color: #A3BAC3;
+  margin: 0;
 }
 
 h1 {
   color: white;
   text-align: center;
-  margin-top: 100px;
+  text-decoration: underline;
+  margin-top: 50px;
   font-size: 3.5em;
-}
-
-h2 {
-  text-align: right;
-  margin-top: 200px;
+  font-family: fantasy;
 }
 
 
@@ -19,8 +17,8 @@ h2 {
   position: absolute;
   text-align: center;
   color: white;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 25px;
+  padding-bottom: 50px;
   font-size: 2em;
   font-family: cursive;
   left: 50%;
@@ -30,16 +28,24 @@ h2 {
 
 
 button {
-  height:20px;
+  height:30px;
   position:relative;
-  background-color: white;
+  background-color: #DD6E42;
+  color: white;
   margin: -20px -50px;
   width:100px;
   top:50%;
   left: 50%;
-  margin-top: 450px;
+  margin-top: 400px;
+  border-radius: 10%;
 }
 
-button .mybutton {
-  background-color: white;
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  padding: 25px;
+  color: white;
+  background-color: #424B54;
+  font-family: fantasy;
 }
