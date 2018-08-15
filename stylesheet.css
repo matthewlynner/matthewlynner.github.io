@@ -1,16 +1,21 @@
 .jumbotron {
     margin-bottom: 0px;
-    height: 625px;
+    height: 650px;
     background-image: url("https://www.mistrisolutions.com/wp-content/uploads/2016/01/website-design-background.png");
     background-size: cover;
     background-position: 40% 90%;
     background-repeat: no-repeat;
     color: white;
+    text-align: center;
 }
 
 body > div.jumbotron.jumbotron-fluid > div > p {
     padding-left: 3px;
     font-size: 1.5em;
+}
+
+.introText {
+  margin-top: 15%;
 }
 
 /*NAVIGATION STYLE*/
@@ -52,7 +57,7 @@ body > div.jumbotron.jumbotron-fluid > div > p {
   position: relative;
   text-align: center;
   cursor: default;
-  background: gray;
+  background: black;
 }
 
 .hovereffect .overlay {
@@ -115,7 +120,7 @@ body > div.jumbotron.jumbotron-fluid > div > p {
   transform: translate3d(0,0,0);
 }
 
-.hovereffect a, .hovereffect p {
+.hovereffect a, .hovereffect p, .hovereffect h2 {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -125,7 +130,7 @@ body > div.jumbotron.jumbotron-fluid > div > p {
   transform: translate3d(100%,0,0);
 }
 
-.hovereffect:hover a, .hovereffect:hover p {
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
