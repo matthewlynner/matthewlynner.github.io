@@ -1,3 +1,7 @@
+h1, h2, p {
+  color: #505050;
+}
+
 .jumbotron {
     margin-bottom: 0px;
     height: 650px;
@@ -7,6 +11,11 @@
     background-repeat: no-repeat;
     color: white;
     text-align: center;
+}
+
+
+h1.display-4, p.lead {
+  color: white;
 }
 
 body > div.jumbotron.jumbotron-fluid > div > p {
@@ -31,7 +40,6 @@ body > div.jumbotron.jumbotron-fluid > div > p {
 
 .welcome-header {
     text-align: center;
-    color: black;
     padding-bottom: 50px;
     padding-top: 100px;
     max-width: 100%;
@@ -42,7 +50,8 @@ body > div.jumbotron.jumbotron-fluid > div > p {
 /*IMAGE GALLERY EFFECTS*/
 
 .col-md-4 {
-  padding-bottom: 75px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .col-md-4 .image-container {
@@ -149,7 +158,7 @@ body > div.jumbotron.jumbotron-fluid > div > p {
 
 .about-header {
     text-align: center;
-    color: black;
+    color: #505050;
     padding-bottom: 100px;
     padding-top: 100px;
     max-width: 100%;
@@ -174,16 +183,19 @@ body > div.jumbotron.jumbotron-fluid > div > p {
 }
 
 .hrstyle {
-	height: 10px;
-  padding-bottom: 60px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  border: 2px solid #d21010;
+  border-radius: 2px;
+  width: 10%;
+  max-width: 100px;
+  margin: 2rem auto;
 }
 
 .hrstyleprojects {
-	height: 10px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  border: 2px solid #d21010;
+  border-radius: 2px;
+  width: 10%;
+  max-width: 100px;
+  margin-top: 30px;
 }
 
 .container .application-header {
@@ -197,6 +209,10 @@ body > div.jumbotron.jumbotron-fluid > div > p {
     padding-top: 100px;
     max-width: 100%;
     height: 165px;
+}
+
+.col-sm-4 {
+  margin-bottom: 15px;
 }
 
 /*CONTACT FORM*/
