@@ -215,6 +215,10 @@ body > div.jumbotron.jumbotron-fluid > div > p {
   margin-bottom: 15px;
 }
 
+.btn-outline-secondary:hover {
+    background-color: #d21010;
+  }
+
 /*CONTACT FORM*/
 
 .form-container {
