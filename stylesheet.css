@@ -5,26 +5,12 @@ h1, h2, p {
 .jumbotron {
     margin-bottom: 0px;
     height: 100vh;
-    background-image: url("https://www.mistrisolutions.com/wp-content/uploads/2016/01/website-design-background.png");
+    background-image: url("images/hero-main.jpg");
     background-size: cover;
     background-position: 40% 90%;
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-}
-
-
-h1.display-4, p.lead {
-  color: white;
-}
-
-body > div.jumbotron.jumbotron-fluid > div > p {
-    padding-left: 3px;
-    font-size: 1.5em;
-}
-
-.introText {
-  margin-top: 15%;
 }
 
 /*NAVIGATION STYLE*/
