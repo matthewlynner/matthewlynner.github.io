@@ -2,6 +2,10 @@ h1, h2, p {
   color: #505050;
 }
 
+.d-none{
+  display: none;
+}
+
 .jumbotron {
     margin-bottom: 0px;
     height: 100vh;
