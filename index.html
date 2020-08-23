@@ -8,23 +8,27 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<script src="javascript.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="typed.js"></script>
+	<script src="index.js"></script>
 </head>
 
 <body>
-	<!-- Navigation Section -->
+	<!-- Jumbotron only visible on initial page load -->
 	<div class="jumbotron jumbotron-fluid">
-		<div class="container text-right">
-			<h1 class="text-light">Matt Lynner | Web Developer</h1>
-			<p class="text-light">Minneapolis, MN</p>
+		<div class="container row justify-content-end align-items-center">
+			<div id="typed-strings">
+				<h1 class="text-light">Matt Lynner | <span id="typed"></span></h1>
+			</div>
 		</div>
 	</div>
-
+	<!-- Navigation Section -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+		<a class="navbar-brand" href="index.html">Matt Lynner</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
 					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -142,9 +146,5 @@
 <footer>
 	<div class="text-center">Matthew Lynner 2020</div>
 </footer>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
