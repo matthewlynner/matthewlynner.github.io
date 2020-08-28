@@ -16,7 +16,7 @@ function checkFirstVisit() {
         }, 6500);
         
         new Typed('#typed', {
-            strings: ['Designer.', 'UX Developer.', 'Minneapolis, MN'],
+            strings: ['Designer.', 'UX Developer.', 'Minneapolis, MN.'],
             stringsElement: null,
             startDelay: 1000,
             backSpeed: 30,
