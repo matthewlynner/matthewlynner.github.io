@@ -1,5 +1,5 @@
 body {
-  background-color: lightgrey;
+  background-color: #000;
 }
 
 .container {
@@ -9,16 +9,8 @@ body {
   font-size: 28px;
 }
 
-.calcForm {
-  position: absolute;
-  text-align: center;
-  background-color: darkblue;
-  margin-top: 50px;
-  padding: 15px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-radius: 10%
+h1 {
+  color: #FFF;
 }
 
 .calcRow {
@@ -26,19 +18,28 @@ body {
 }
 
 .calcDisplay {
-  width: 200px;
-  height: 40px;
+  width: 215px;
+  height: auto;
+  background-color: #000;
+  color: #fff;
   margin-bottom: 15px;
-  font-size: 32px;
-  margin-top: 20px;
+  font-size: 50px;
+  text-align: right;
+  border: 0;
 }
 
 .calcButton {
-  border-radius: 15%;
+  border-radius: 50%;
   font-weight: bold;
   padding: 15px;
   margin: 2px;
   font-size: 16px;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  background-color: #393939;
+  color: #FFF;
+  cursor: pointer;
 }
 
 #clearButton {

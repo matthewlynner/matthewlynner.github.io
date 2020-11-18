@@ -1,35 +1,33 @@
-$(function () {
-    checkFirstVisit();
-});
-
-function checkFirstVisit() {
-    if(document.cookie.indexOf('mycookie')==-1) {
-      // cookie doesn't exist, create it now
+$(window).on('load', function() {
+    if (document.cookie.indexOf('mycookie') == -1) {
+        // cookie doesn't exist, create it now
         document.cookie = 'mycookie=1';
+
         disableScrolling();
 
-        setTimeout(function(){
-            $('html,body').animate({
-                scrollTop: $('.navbar').offset().top
-            }, 1000);
-            enableScrolling()
-        }, 6500);
-        
         new Typed('#typed', {
-            strings: ['Designer.', 'UX Developer.', 'Minneapolis, MN.'],
+            strings: ['Designer.', 'Developer.', 'Minneapolis, MN.'],
             stringsElement: null,
             startDelay: 1000,
             backSpeed: 30,
             backDelay: 500,
             typeSpeed: 50,
             loop: false,
-            showCursor: false
+            showCursor: false,
+            onComplete: function () {
+                $('html,body').animate({
+                    scrollTop: $('.navbar').offset().top
+                }, 1000, function () {
+                    enableScrolling();
+                    $('.jumbotron').addClass('d-none');
+                });
+            }
         });
     }
     else {
         $('.jumbotron').addClass('d-none');
     }
-}
+});
 
 function disableScrolling() {
     $('html, body').css({
